@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Study Flashcards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #4CAF50;
+    }
+    header h1 {
+      margin: 0;
+      color: #4CAF50;
+    }
+    .flashcard {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px 20px;
+      margin: 15px 0;
+      transition: background-color 0.3s;
+    }
+    .flashcard:hover {
+      background-color: #e8f5e9;
+    }
+    .term {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    .definition {
+      font-size: 1em;
+      line-height: 1.4;
+      color: #555;
+    }
+    button.refresh-btn {
+      display: block;
+      margin: 30px auto 0 auto;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 3px 5px rgba(0, 150, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+    button.refresh-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Study Flashcards</h1>
+    <p>Learn quickly and easily with daily flashcards!</p>
+  </header>
+
+  <section class="flashcards-list">
+    <article class="flashcard">
+      <div class="term">Photosynthesis</div>
+      <div class="definition">The process by which green plants use sunlight to synthesize foods.</div>
+    </article>
+    <article class="flashcard">
+      <div class="term">Gravity</div>
+      <div class="definition">A force that attracts a body toward the center of the earth.</div>
+    </article>
+    <article class="flashcard">
+      <div class="term">Atom</div>
+      <div class="definition">The smallest unit of matter that retains the properties of an element.</div>
+    </article>
+    <article class="flashcard">
+      <div class="term">Ecosystem</div>
+      <div class="definition">A community of interacting organisms and their environment.</div>
+    </article>
+    <article class="flashcard">
+      <div class="term">Molecule</div>
+      <div class="definition">A group of atoms bonded together.</div>
+    </article>
+  </section>
+
+  <button class="refresh-btn" onclick="location.reload();">Refresh Cards</button>
+
+</body>
+</html>
