@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to My App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 80%;
+      max-width: 300px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>مرحبا بك في تطبيقي</h1>
+  <p>اختر أحد الأقسام للدخول:</p>
+
+  <div class="button-container">
+    <button onclick="location.href='https://example.com/lessons.html'">📘 دروس</button>
+    <button onclick="location.href='https://example.com/contact.html'">📞 تواصل معنا</button>
+    <button onclick="location.href='https://example.com/download.html'">⬇️ تحميلات</button>
+    <button onclick="location.href='https://example.com/video.html'">🎥 فيديوهات</button>
+    <button onclick="location.href='https://example.com/about.html'">ℹ️ حول التطبيق</button>
+  </div>
+
+</body>
+</html>
